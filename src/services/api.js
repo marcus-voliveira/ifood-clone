@@ -5,7 +5,9 @@ const api = axios.create({
 });
 
 // porta 3000 para pc;
-// porta 19003 para 
+// porta 19003 para mobile
 // sempre conferir ip
+// executar json-server -H 191.52.55.35 -p 3000 server.json
+
 
 export default api;
