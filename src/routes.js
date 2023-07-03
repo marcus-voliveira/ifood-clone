@@ -9,6 +9,7 @@ import Busca from './screens/Busca';
 import Perfil from './screens/Perfil';
 import Pedidos from './screens/Pedidos';
 import Pagamentos from './screens/Pagamentos';
+import PedidosAnteriores from './screens/PedidosAnteriores'
 
 const BottomTab = createBottomTabNavigator();
 
@@ -43,7 +44,7 @@ export default function Routes() {
         />
         <BottomTab.Screen
           name="Pedidos"
-          component={Pedidos}
+          component={PedidosRouter}
           options={{
             tabBarLabel: 'Pedidos',
             tabBarIcon: ({ color }) => (
@@ -79,3 +80,19 @@ function PerfilRoutes() {
     </PerfilStack.Navigator>
   );
 } 
+
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+const Tab = createMaterialTopTabNavigator();
+
+function PedidosRouter() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Pedidos" component={Pedidos} />
+      <Tab.Screen
+        name="PedidosAnteriores"
+        component={PedidosAnteriores}
+        options={{ tabBarLabel: 'Pedidos Anteriores' }}
+      />
+    </Tab.Navigator>
+  );
+}
