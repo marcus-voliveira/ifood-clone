@@ -22,7 +22,7 @@ const Tab = createMaterialTopTabNavigator();
 function HomeRoutes() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Tela inicial" component={Home} />
       <Stack.Screen name="Item" component={Item} />
     </Stack.Navigator>
   );
@@ -56,26 +56,16 @@ export default function Routes() {
       <BottomTab.Navigator
         screenOptions={{
           tabBarActiveTintColor: 'red',
-          tabBarInactiveTintColor: 'black',
+          tabBarInactiveTintColor: '',
         }} 
       >
         <BottomTab.Screen
-          name="HomeRoutes"
+          name="Padaria Legal :]"
           component={HomeRoutes}
           options= {{
             tabBarLabel: 'Home',
             tabBarIcon: ({ color }) => (
               <MaterialIcons name="home" color={color} size={26} />
-            ),
-          }} 
-        />
-        <BottomTab.Screen
-          name="Busca"
-          component={Busca}
-          options= {{
-            tabBarLabel: 'Busca',
-            tabBarIcon: ({ color }) => (
-              <MaterialIcons name="search" color={color} size={26} />
             ),
           }} 
         />
