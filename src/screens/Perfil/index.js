@@ -35,19 +35,6 @@ export default function Perfil({ navigation }) {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.option} onPress={() => {}}>
-          <MaterialCommunityIcons
-            name="ticket-outline"
-            size={35}
-            color="#333"
-          />
-          <ScrollView style={styles.info}>
-            <Text style={styles.title}>Cupons</Text>
-            <Text style={styles.description}>Meus cupons de desconto</Text>
-          </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.option} onPress={() => {}}>
           <MaterialCommunityIcons name="heart-outline" size={35} color="#333" />
           <ScrollView style={styles.info}>
             <Text style={styles.title}>Favoritos</Text>
