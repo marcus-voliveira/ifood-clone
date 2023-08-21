@@ -4,7 +4,7 @@ import { Text, TouchableOpacity, View, StyleSheet } from 'react-native';
 
 export default function Endereco() {
   return (
-    <View style={styles.container}>s
+    <View style={styles.container}>
     </View>
   );
 }
