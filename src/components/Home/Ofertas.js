@@ -40,9 +40,6 @@ export default function Ofertas({ navigation }) {
           <Text style={styles.titulo}>Comida boa e barata!</Text>
           <Text style={styles.subTitulo}>Pratos com frete grátis.</Text>
         </View>
-        <TouchableOpacity>
-          <Text style={styles.vejaMais}>Ver mais</Text>
-        </TouchableOpacity>
       </View>
       <ScrollView
         showsHorizontalScrollIndicator={false}
@@ -93,9 +90,6 @@ const styles = StyleSheet.create({
   },
   subTitulo: {
     color: '#999',
-  },
-  vejaMais: {
-    color: 'red',
   },
   lista: {
     paddingLeft: 20,

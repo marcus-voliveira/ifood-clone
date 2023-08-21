@@ -7,7 +7,6 @@ import Sugestoes from '../../components/Home/Sugestoes';
 import Promocoes from '../../components/Home/Promocoes';
 import Ofertas from '../../components/Home/Ofertas';
 import Categorias from '../../components/Home/Categorias';
-import Restaurantes from '../../components/Home/Restaurantes';
 
 export default function Home({ navigation }) {
   return (
@@ -17,7 +16,6 @@ export default function Home({ navigation }) {
       <Promocoes />
       <Ofertas navigation={navigation} />
       <Categorias />
-      <Restaurantes />
     </ScrollView>
   );
 }
@@ -25,6 +23,6 @@ export default function Home({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#EED4BB',
   },
 });

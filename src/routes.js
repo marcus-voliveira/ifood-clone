@@ -14,6 +14,7 @@ import Pedidos from './screens/Pedidos';
 import PedidosAnteriores from './screens/PedidosAnteriores';
 import Pagamentos from './screens/Pagamentos';
 import Item from './screens/Item';
+import { StyleSheet } from 'react-native-web';
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -56,7 +57,7 @@ export default function Routes() {
       <BottomTab.Navigator
         screenOptions={{
           tabBarActiveTintColor: '#E06903',
-          tabBarInactiveTintColor: '',
+          tabBarInactiveTintColor: '#fff',
         }} 
       >
         <BottomTab.Screen

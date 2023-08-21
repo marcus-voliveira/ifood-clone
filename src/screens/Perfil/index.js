@@ -65,7 +65,7 @@ export default function Perfil({ navigation }) {
       <View style={styles.menuAdicional}>
         <TouchableOpacity style={styles.opcoesAdicionais}>
           <View style={styles.wrapper}>
-            <MaterialCommunityIcons name="lifebuoy" size={25} color="#CDC" />
+            <MaterialCommunityIcons name="lifebuoy" size={25} color="#DC9349" />
             <Text style={styles.optionName}>Ajuda</Text>
           </View>
           <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
@@ -73,7 +73,7 @@ export default function Perfil({ navigation }) {
 
         <TouchableOpacity style={styles.opcoesAdicionais}>
           <View style={styles.wrapper}>
-            <MaterialIcons name="settings" size={25} color="#CDC" />
+            <MaterialIcons name="settings" size={25} color="#DC9349" />
             <Text style={styles.optionName}>Configurações</Text>
           </View>
           <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
@@ -81,7 +81,7 @@ export default function Perfil({ navigation }) {
 
         <TouchableOpacity style={styles.opcoesAdicionais}>
           <View style={styles.wrapper}>
-            <MaterialIcons name="security" size={25} color="#CDC" />
+            <MaterialIcons name="security" size={25} color="#DC9349" />
             <Text style={styles.optionName}>Segurança</Text>
           </View>
           <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
@@ -89,7 +89,7 @@ export default function Perfil({ navigation }) {
 
         <TouchableOpacity style={styles.opcoesAdicionais}>
           <View style={styles.wrapper}>
-            <MaterialIcons name="store-mall-directory" size={25} color="#CDC" />
+            <MaterialIcons name="store-mall-directory" size={25} color="#DC9349" />
             <Text style={styles.optionName}>Sugerir Restaurantes</Text>
           </View>
           <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
@@ -97,7 +97,7 @@ export default function Perfil({ navigation }) {
 
         <TouchableOpacity style={styles.opcoesAdicionais}>
           <View style={styles.wrapper}>
-            <MaterialCommunityIcons name="rocket" size={25} color="#CDC" />
+            <MaterialCommunityIcons name="rocket" size={25} color="#DC9349" />
             <Text style={styles.optionName}>Seja parceiro!</Text>
           </View>
           <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
@@ -110,7 +110,7 @@ export default function Perfil({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
   },
   option: {
     flexDirection: 'row',
