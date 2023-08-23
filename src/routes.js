@@ -25,7 +25,7 @@ function HomeRoutes() {
     <Stack.Navigator>
       <Stack.Screen name="Tela inicial" component={Home} />
       <Stack.Screen name="Item" component={Item} />
-    </Stack.Navigator>
+    </Stack.Navigator>  
   );
 }
 
@@ -60,15 +60,16 @@ export default function Routes() {
           tabBarInactiveTintColor: '#fff',
         }} 
       >
-        <BottomTab.Screen
+        <BottomTab.Screen 
           name="Padaria Legal :]"
           component={HomeRoutes}
           options= {{
+            headerStyle: { backgroundColor: 'black' },  
             tabBarLabel: 'Home',
             tabBarIcon: ({ color }) => (
               <MaterialIcons name="home" color={color} size={26} />
             ),
-          }} 
+          }}
         />
         <BottomTab.Screen
           name="PedidosRouter"
@@ -84,7 +85,7 @@ export default function Routes() {
           name="PerfilRoutes"
           component={PerfilRoutes}
           options= {{
-            headerShown: false,
+            headerShown: false, 
             tabBarLabel: 'Perfil',
             tabBarIcon: ({ color }) => (
               <MaterialIcons name="person" color={color} size={26} />
