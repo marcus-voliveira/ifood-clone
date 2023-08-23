@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   subTitulo: {
-    color: '#999',
+    color: '#A45710',
   },
   lista: {
     paddingLeft: 20,

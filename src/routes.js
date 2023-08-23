@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 
-import { MaterialIcons } from '@expo/vector-icons';
+import { MaterialIcons } from "@expo/vector-icons";
 
-import Home from './screens/Home';
-import Busca from './screens/Busca';
-import Perfil from './screens/Perfil';
-import Pedidos from './screens/Pedidos';
-import PedidosAnteriores from './screens/PedidosAnteriores';
-import Pagamentos from './screens/Pagamentos';
-import Item from './screens/Item';
-import { StyleSheet } from 'react-native-web';
+import Home from "./screens/Home";
+import Busca from "./screens/Busca";
+import Perfil from "./screens/Perfil";
+import Pedidos from "./screens/Pedidos";
+import PedidosAnteriores from "./screens/PedidosAnteriores";
+import Pagamentos from "./screens/Pagamentos";
+import Item from "./screens/Item";
+import { StyleSheet } from "react-native-web";
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -22,10 +22,14 @@ const Tab = createMaterialTopTabNavigator();
 
 function HomeRoutes() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Tela inicial" component={Home} />
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name=" " component={Home} />
       <Stack.Screen name="Item" component={Item} />
-    </Stack.Navigator>  
+    </Stack.Navigator>
   );
 }
 
@@ -36,7 +40,7 @@ function PedidosRouter() {
       <Tab.Screen
         name="PedidosAnteriores"
         component={PedidosAnteriores}
-        options={{ tabBarLabel: 'Pedidos Anteriores' }} 
+        options={{ tabBarLabel: "Pedidos Anteriores" }}
       />
     </Tab.Navigator>
   );
@@ -56,16 +60,25 @@ export default function Routes() {
     <NavigationContainer>
       <BottomTab.Navigator
         screenOptions={{
-          tabBarActiveTintColor: '#E06903',
-          tabBarInactiveTintColor: '#fff',
-        }} 
+          tabBarActiveTintColor: "#E06903",
+          tabBarInactiveTintColor: "#fff",
+          tabBarStyle: { backgroundColor: "black" },
+        }}
       >
-        <BottomTab.Screen 
+        <BottomTab.Screen
           name="Padaria Legal :]"
           component={HomeRoutes}
-          options= {{
-            headerStyle: { backgroundColor: 'black' },  
-            tabBarLabel: 'Home',
+          options={{
+            headerStyle: { backgroundColor: "black" },
+            headerTitleStyle: {
+              color: "white",
+              backgroundColor: "#A45710",
+              padding: 8,
+              paddingRight: 16,
+              paddingLeft: 16,
+              borderRadius: 20
+            },
+            tabBarLabel: "Início",
             tabBarIcon: ({ color }) => (
               <MaterialIcons name="home" color={color} size={26} />
             ),
@@ -74,25 +87,25 @@ export default function Routes() {
         <BottomTab.Screen
           name="PedidosRouter"
           component={PedidosRouter}
-          options= {{
-            headerStyle: { backgroundColor: 'black' },
-            tabBarLabel: 'Pedidos',
+          options={{
+            headerStyle: { backgroundColor: "black" },
+            tabBarLabel: "Pedidos",
             tabBarIcon: ({ color }) => (
               <MaterialIcons name="assignment" color={color} size={26} />
             ),
-          }} 
+          }}
         />
         <BottomTab.Screen
           name="PerfilRoutes"
           component={PerfilRoutes}
-          options= {{
-            headerStyle: { backgroundColor: 'black' },
-            headerShown: false, 
-            tabBarLabel: 'Perfil',
+          options={{
+            headerStyle: { backgroundColor: "black" },
+            headerShown: false,
+            tabBarLabel: "Perfil",
             tabBarIcon: ({ color }) => (
               <MaterialIcons name="person" color={color} size={26} />
             ),
-          }} 
+          }}
         />
       </BottomTab.Navigator>
     </NavigationContainer>
