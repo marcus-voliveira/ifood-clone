@@ -49,8 +49,18 @@ function PedidosRouter() {
 function PerfilRoutes() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Perfil" component={Perfil} />
-      <Stack.Screen name="Pagamentos" component={Pagamentos} />
+      <Stack.Screen name="Perfil" component={Perfil} 
+      options={{
+        headerStyle: { backgroundColor: 'black' },
+        headerTitleStyle: { color: 'white' }
+      }}
+      />
+      <Stack.Screen name="Pagamentos" component={Pagamentos} 
+      options={{
+        headerStyle: { backgroundColor: 'black' },
+        headerTitleStyle: { color: 'white' }
+      }}
+      />
     </Stack.Navigator>
   );
 }
@@ -71,7 +81,7 @@ export default function Routes() {
           options={{
             headerStyle: { backgroundColor: "black" },
             headerTitleStyle: {
-              color: "white"
+              color: "white",
             },
             tabBarLabel: "Início",
             tabBarIcon: ({ color }) => (
@@ -84,7 +94,7 @@ export default function Routes() {
           component={PedidosRouter}
           options={{
             headerStyle: { backgroundColor: "black" },
-            headerTitleStyle: { color: "white"},
+            headerTitleStyle: { color: "white" },
             tabBarLabel: "Pedidos",
             tabBarIcon: ({ color }) => (
               <MaterialIcons name="assignment" color={color} size={26} />
@@ -95,6 +105,8 @@ export default function Routes() {
           name="PerfilRoutes"
           component={PerfilRoutes}
           options={{
+            headerStyle: { backgroundColor: "black" },
+            headerTitleStyle: { color: "white" },
             headerShown: false,
             tabBarLabel: "Perfil",
             tabBarIcon: ({ color }) => (
