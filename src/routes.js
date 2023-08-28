@@ -84,6 +84,7 @@ export default function Routes() {
           component={PedidosRouter}
           options={{
             headerStyle: { backgroundColor: "black" },
+            headerTitleStyle: { color: "white"},
             tabBarLabel: "Pedidos",
             tabBarIcon: ({ color }) => (
               <MaterialIcons name="assignment" color={color} size={26} />
@@ -94,7 +95,6 @@ export default function Routes() {
           name="PerfilRoutes"
           component={PerfilRoutes}
           options={{
-            headerStyle: { backgroundColor: "black" },
             headerShown: false,
             tabBarLabel: "Perfil",
             tabBarIcon: ({ color }) => (
