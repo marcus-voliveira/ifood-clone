@@ -71,12 +71,7 @@ export default function Routes() {
           options={{
             headerStyle: { backgroundColor: "black" },
             headerTitleStyle: {
-              color: "white",
-              backgroundColor: "#A45710",
-              padding: 8,
-              paddingRight: 16,
-              paddingLeft: 16,
-              borderRadius: 20
+              color: "white"
             },
             tabBarLabel: "Início",
             tabBarIcon: ({ color }) => (

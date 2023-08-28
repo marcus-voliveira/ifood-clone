@@ -12,7 +12,7 @@ export default function Pedidos() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#E1A166',
     alignItems: 'center',
     justifyContent: 'center',
   },

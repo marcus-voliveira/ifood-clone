@@ -13,94 +13,94 @@ export default function Perfil({ navigation }) {
     <ScrollView style={styles.container}>
       <ScrollView>
         <TouchableOpacity style={styles.option} onPress={() => {}}>
-          <MaterialCommunityIcons name="bell-outline" size={35} color="#333" />
+          <MaterialCommunityIcons name="bell-outline" size={35} color="black" />
           <ScrollView style={styles.info}>
             <Text style={styles.title}>Notificações</Text>
             <Text style={styles.description}>
               Minha central de notificações
             </Text>
           </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+          <MaterialIcons name="keyboard-arrow-right" color="black" size={20} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.option}
           onPress={() => navigation.navigate('Pagamentos')}
         >
-          <MaterialCommunityIcons name="credit-card" size={35} color="#333" />
+          <MaterialCommunityIcons name="credit-card" size={35} color="black" />
           <ScrollView style={styles.info}>
             <Text style={styles.title}>Pagamentos</Text>
             <Text style={styles.description}>Meus saldos e cartões</Text>
           </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+          <MaterialIcons name="keyboard-arrow-right" color="black" size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.option} onPress={() => {}}>
-          <MaterialCommunityIcons name="heart-outline" size={35} color="#333" />
+          <MaterialCommunityIcons name="heart-outline" size={35} color="black" />
           <ScrollView style={styles.info}>
             <Text style={styles.title}>Favoritos</Text>
             <Text style={styles.description}>Meus locais favoritos</Text>
           </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+          <MaterialIcons name="keyboard-arrow-right" color="black" size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.option} onPress={() => {}}>
-          <MaterialCommunityIcons name="credit-card" size={35} color="#333" />
+          <MaterialCommunityIcons name="credit-card" size={35} color="black" />
           <ScrollView style={styles.info}>
             <Text style={styles.title}>Fidelidade</Text>
             <Text style={styles.description}>Minhas fidelidades</Text>
           </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+          <MaterialIcons name="keyboard-arrow-right" color="black" size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.option} onPress={() => {}}>
-          <MaterialCommunityIcons name="map-marker" size={35} color="#333" />
+          <MaterialCommunityIcons name="map-marker" size={35} color="black" />
           <ScrollView style={styles.info}>
             <Text style={styles.title}>Endereços</Text>
             <Text style={styles.description}>Meus endereços de entrega</Text>
           </ScrollView>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+          <MaterialIcons name="keyboard-arrow-right" color="black" size={20} />
         </TouchableOpacity>
       </ScrollView>
 
       <View style={styles.menuAdicional}>
         <TouchableOpacity style={styles.opcoesAdicionais}>
           <View style={styles.wrapper}>
-            <MaterialCommunityIcons name="lifebuoy" size={25} color="#DC9349" />
+            <MaterialCommunityIcons name="lifebuoy" size={25} color="#413C37" />
             <Text style={styles.optionName}>Ajuda</Text>
           </View>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+          <MaterialIcons name="keyboard-arrow-right" color="#413C37" size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.opcoesAdicionais}>
           <View style={styles.wrapper}>
-            <MaterialIcons name="settings" size={25} color="#DC9349" />
+            <MaterialIcons name="settings" size={25} color="#413C37" />
             <Text style={styles.optionName}>Configurações</Text>
           </View>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+          <MaterialIcons name="keyboard-arrow-right" color="#413C37" size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.opcoesAdicionais}>
           <View style={styles.wrapper}>
-            <MaterialIcons name="security" size={25} color="#DC9349" />
+            <MaterialIcons name="security" size={25} color="#413C37" />
             <Text style={styles.optionName}>Segurança</Text>
           </View>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+          <MaterialIcons name="keyboard-arrow-right" color="#413C37" size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.opcoesAdicionais}>
           <View style={styles.wrapper}>
-            <MaterialIcons name="store-mall-directory" size={25} color="#DC9349" />
+            <MaterialIcons name="store-mall-directory" size={25} color="#413C37" />
             <Text style={styles.optionName}>Sugerir Restaurantes</Text>
           </View>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+          <MaterialIcons name="keyboard-arrow-right" color="#413C37" size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.opcoesAdicionais}>
           <View style={styles.wrapper}>
-            <MaterialCommunityIcons name="rocket" size={25} color="#DC9349" />
+            <MaterialCommunityIcons name="rocket" size={25} color="#413C37" />
             <Text style={styles.optionName}>Seja parceiro!</Text>
           </View>
-          <MaterialIcons name="keyboard-arrow-right" color="#999" size={20} />
+          <MaterialIcons name="keyboard-arrow-right" color="" size={20} />
         </TouchableOpacity>
       </View>
     </ScrollView>
@@ -110,7 +110,7 @@ export default function Perfil({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: '#E1A166',
   },
   option: {
     flexDirection: 'row',
@@ -127,12 +127,12 @@ const styles = StyleSheet.create({
     marginLeft: 20,
   },
   title: {
-    color: '#333',
+    color: 'black',
     fontSize: 18,
   },
   description: {
     fontSize: 16,
-    color: '#999',
+    color: '#676462',
   },
   menuAdicional: {
     marginTop: 30,
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
   },
   optionName: {
     marginLeft: 25,
-    color: '#ccc',
+    color: '#413C37',
     fontSize: 15,
   },
 });
